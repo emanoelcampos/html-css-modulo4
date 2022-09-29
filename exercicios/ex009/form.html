@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulários com telefones e e-mail</h1>
+    <form 
+        action="/exercicios/ex007/cadastro.java" 
+        method="get"
+        autocomplete="on">
+    <fieldset>
+        <legend>Dados do pessoais</legend>
+        <p>
+            <label for="imail">Email
+                <input
+                    type="email"
+                    name="mail"
+                    id="imail"
+                    required
+                    autocomplete="email">
+            </label>
+        </p>
+        <p>
+            <label for="iphone">Telefone</label>
+            <input
+                type="tel"
+                name="phone"
+                id="iphone"
+                required
+                autocomplete="tel"
+                pattern="^[0-9]{4}-[0-9]{4}$">
+        </p>
+    </fieldset>
+    <p>
+        <input type="submit" value="Eviar">
+        <input type="reset" value="Limpar">
+    </p>
+    </form>
+</body>
+</html>
